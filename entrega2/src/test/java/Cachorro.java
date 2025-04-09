@@ -10,13 +10,14 @@ public class Cachorro {
     }
 
     public void latir() {
-    System.out.print(nome + " está latindo!");
-    }
-    public void falarIdade() {
-    System.out.print(nome + " Tem " + idade + " anos.");
+        System.out.println(nome + " está latindo!");
     }
 
-    public void falarRaca(){
-    System.out.print(nome + " é da raça: " + raca);
+    public void falarIdade() {
+        System.out.println(nome + " Tem " + idade + " anos.");
     }
+
+    public void falarRaca() {
+        System.out.println(nome + " é da raça: " + raca);
     }
+}

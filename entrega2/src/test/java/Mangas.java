@@ -12,14 +12,14 @@ public class Mangas {
 
 
     public void falarNome() {
-        System.out.print("O nome do mangá é: " + nome);
+        System.out.println("O nome do mangá é: " + nome);
     }
 
     public void falarCapitulo() {
-        System.out.print("O capitulo em que está é: " +  capitulo);
+        System.out.println("O capitulo em que está é: " + capitulo);
     }
 
     public void falarNota() {
-        System.out.print("A nota de :" + nome + "É : " + nota);
+        System.out.println("A nota de :" + nome + "É : " + nota);
     }
 }
