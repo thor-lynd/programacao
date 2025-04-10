@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="481.0" prefWidth="691.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <TabPane fx:id="inicioMenu" prefHeight="229.0" prefWidth="652.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="celularesGui" text="Celulares">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="inserirMarca" layoutX="47.0" layoutY="14.0" text="Insira a marca do celular" />
+                        <TextField fx:id="textMarca" layoutX="47.0" layoutY="31.0" promptText="Marca do celular.." />
+                        <Label fx:id="inserirModelo" layoutX="249.0" layoutY="14.0" text="insira o modelo do celular." />
+                        <Label fx:id="inserirPreco" layoutX="444.0" layoutY="14.0" text="Insira o preco do celular" />
+                        <TextField fx:id="textModelo" layoutX="251.0" layoutY="31.0" promptText="Modelo do celular..." />
+                        <TextField fx:id="textPreco" layoutX="444.0" layoutY="31.0" promptText="Preço do celular.." />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab fx:id="albumsGui" text="Albums">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="albumEscutar" layoutX="234.0" layoutY="23.0" prefHeight="17.0" prefWidth="183.0" text="Qual Album você quer escutar?" />
+                        <ImageView fx:id="chronic" fitHeight="135.0" fitWidth="166.0" layoutX="46.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../IMAGENS/chronic.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ftroyl" fitHeight="135.0" fitWidth="166.0" layoutX="248.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../IMAGENS/ftroyl.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="135.0" fitWidth="166.0" layoutX="459.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../IMAGENS/songsandmusic.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="botaoChronic" layoutX="46.0" layoutY="39.0" mnemonicParsing="false" opacity="0.0" prefHeight="136.0" prefWidth="137.0" />
+                        <Button fx:id="botaoFtroyl" layoutX="247.0" layoutY="39.0" mnemonicParsing="false" opacity="0.0" prefHeight="136.0" prefWidth="137.0" />
+                        <Button fx:id="botaoSongsandmusic" layoutX="458.0" layoutY="39.0" mnemonicParsing="false" opacity="0.0" prefHeight="136.0" prefWidth="137.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="mangasGui" text="Mangás" />
+            <Tab fx:id="pessoasGui" text="Pessoas">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="carrosGui" text="Carros">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="tenisGui" text="Tenis">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="peixesGui" text="Peixes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="cachorrosGui" text="Cachorros">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="floresGui" text="Flores">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label />
+      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Switch to Secondary View" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
