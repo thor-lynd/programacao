@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.PeixeController"
+      spacing="10" alignment="TOP_CENTER"
+      style="-fx-background-color: #AEDFF7;"> <!-- azul pastel -->
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Cadastro de Peixe" style="-fx-font-weight: bold; -fx-font-size: 18px;" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Nome:" prefWidth="80"/>
+        <TextField fx:id="nomePeixe" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Tipo:" prefWidth="80"/>
+        <TextField fx:id="tipoPeixe" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Quantidade:" prefWidth="80"/>
+        <TextField fx:id="quantidadePeixe" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Adicionar Peixe" onAction="#adicionarPeixe"/>
+        <Button text="Visualizar Peixes" onAction="#visualizarPeixes"/>
+    </HBox>
+
+    <TextArea fx:id="areaTextoPeixe" prefHeight="150" prefWidth="400" wrapText="true" editable="false"/>
+
+    <!-- Easter Egg -->
+    <Label text="Nadando no Flow"
+           style="-fx-font-size: 8px; -fx-opacity: 0.1; -fx-text-fill: black;"
+           mouseTransparent="true"/>
+
+</VBox>

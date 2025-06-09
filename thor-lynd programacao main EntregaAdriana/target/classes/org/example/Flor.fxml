@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.FlorController"
+      spacing="10" alignment="TOP_CENTER"
+      style="-fx-background-color: #E6E6FA;" > <!-- lilás pastel -->
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Cadastro de Flor" style="-fx-font-weight: bold; -fx-font-size: 18px;" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Nome:" prefWidth="80"/>
+        <TextField fx:id="nomeFlor" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Cor:" prefWidth="80"/>
+        <TextField fx:id="corFlor" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Altura (cm):" prefWidth="80"/>
+        <TextField fx:id="alturaFlor" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Adicionar Flor" onAction="#adicionarFlor"/>
+        <Button text="Visualizar Flores" onAction="#visualizarFlores"/>
+    </HBox>
+
+    <TextArea fx:id="areaTextoFlor" prefHeight="150" prefWidth="400" wrapText="true" editable="false"/>
+
+</VBox>
