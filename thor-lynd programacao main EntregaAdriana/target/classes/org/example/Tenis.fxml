@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.TenisController"
+      spacing="10" alignment="TOP_CENTER"
+      style="-fx-background-color: #BBDEFB;"> <!-- azul pastel -->
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Cadastro de Tênis" style="-fx-font-weight: bold; -fx-font-size: 18px;" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Marca:" prefWidth="80"/>
+        <TextField fx:id="marcaTenis" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Cor:" prefWidth="80"/>
+        <TextField fx:id="corTenis" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Tamanho:" prefWidth="80"/>
+        <TextField fx:id="tamanhoTenis" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Adicionar Tênis" onAction="#adicionarTenis"/>
+        <Button text="Visualizar Tênis" onAction="#visualizarTenis"/>
+    </HBox>
+
+    <TextArea fx:id="areaTextoTenis" prefHeight="150" prefWidth="400" wrapText="true" editable="false"/>
+
+    <!-- Easter Egg -->
+    <Label text="Pisando com estilo"
+           style="-fx-font-size: 8px; -fx-opacity: 0.1; -fx-text-fill: black;"
+           mouseTransparent="true"/>
+
+</VBox>
