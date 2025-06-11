@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.MenuController"
+      spacing="15" alignment="CENTER" prefWidth="300" prefHeight="450"
+      style="-fx-padding: 20; -fx-background-color: #A8DADC;">
+
+    <Label text="Selecione o que você quer mexer"
+           style="-fx-font-weight: bold; -fx-font-size: 16px;" />
+
+    <Button text="Álbum" onAction="#abrirAlbum" prefWidth="200"/>
+    <Button text="Cachorro" onAction="#abrirCachorro" prefWidth="200"/>
+    <Button text="Carro" onAction="#abrirCarro" prefWidth="200"/>
+    <Button text="Celular" onAction="#abrirCelular" prefWidth="200"/>
+    <Button text="Flor" onAction="#abrirFlor" prefWidth="200"/>
+    <Button text="Mangá" onAction="#abrirManga" prefWidth="200"/>
+    <Button text="Peixe" onAction="#abrirPeixe" prefWidth="200"/>
+    <Button text="Pessoa" onAction="#abrirPessoa" prefWidth="200"/>
+    <Button text="Tênis" onAction="#abrirTenis" prefWidth="200"/>
+
+</VBox>
