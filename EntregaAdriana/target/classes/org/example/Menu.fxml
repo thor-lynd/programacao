@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controller.MenuController"
+            prefWidth="800" prefHeight="600"
+            style="-fx-background-color: #a8d5a3;"> <!-- verde pastel -->
+
+    <VBox alignment="TOP_CENTER" spacing="20" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+        <Label text="Selecione sua classe" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24"/>
+            </font>
+        </Label>
+
+        <Button text="Album" prefWidth="200" fx:id="btnAlbums" onAction="#openAlbum"/>
+        <Button text="Cachorro" prefWidth="200" fx:id="btnCachorro" onAction="#openCachorro"/>
+        <Button text="Carros" prefWidth="200" fx:id="btnCarros" onAction="#openCarros"/>
+        <Button text="Celular" prefWidth="200" fx:id="btnCelular" onAction="#openCelular"/>
+        <Button text="Flor" prefWidth="200" fx:id="btnFlor" onAction="#openFlor"/>
+        <Button text="Mangá" prefWidth="200" fx:id="btnManga" onAction="#openManga"/>
+        <Button text="Peixe" prefWidth="200" fx:id="btnPeixe" onAction="#openPeixe"/>
+        <Button text="Pessoa" prefWidth="200" fx:id="btnPessoa" onAction="#openPessoa"/>
+        <Button text="Tênis" prefWidth="200" fx:id="btnTenis" onAction="#openTenis"/>
+        <Button text="Bicicleta" prefWidth="200" fx:id="btnBicicleta" onAction="#openBicicleta"/>
+        <Button text="Livro" prefWidth="200" fx:id="btnLivro" onAction="#openLivro"/>
+
+        <Label text="escutem twikipedia" textFill="#003300" opacity="0.1" style="-fx-font-size: 12; -fx-font-style: italic;" />
+    </VBox>
+
+</AnchorPane>

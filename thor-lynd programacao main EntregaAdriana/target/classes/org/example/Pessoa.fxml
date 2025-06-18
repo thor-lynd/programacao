@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.PessoaController"
+      spacing="10" alignment="TOP_CENTER"
+      style="-fx-background-color: #C8E6C9;"> <!-- verde pastel -->
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label text="Cadastro de Pessoa" style="-fx-font-weight: bold; -fx-font-size: 18px;" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Nome:" prefWidth="80"/>
+        <TextField fx:id="nomePessoa" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Idade:" prefWidth="80"/>
+        <TextField fx:id="idadePessoa" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Ocupação:" prefWidth="80"/>
+        <TextField fx:id="ocupacaoPessoa" prefWidth="250"/>
+    </HBox>
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Adicionar Pessoa" onAction="#adicionarPessoa"/>
+        <Button text="Visualizar Pessoas" onAction="#visualizarPessoas"/>
+    </HBox>
+
+    <TextArea fx:id="areaTextoPessoa" prefHeight="150" prefWidth="400" wrapText="true" editable="false"/>
+
+    <!-- Easter Egg -->
+    <Label text="Sejam gentis uns com os outros"
+           style="-fx-font-size: 8px; -fx-opacity: 0.1; -fx-text-fill: black;"
+           mouseTransparent="true"/>
+
+</VBox>
